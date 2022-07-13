@@ -3,8 +3,14 @@
 .todos-bg-container {
     background-color: #f9fbfe;
     height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.subCon{
+    width:50vh;
+}
 .todos-heading {
     text-align: center;
     font-family: "Roboto";
@@ -40,13 +46,12 @@
 
 .todo-items-container {
     margin: 0;
-    padding: 5;
     overflow:auto;
     height:40vh;
+    padding:5px;
     max-height:600px;
     border:1px solid black;
     border-radius:5px;
-    
 }
 
 .todo-item-container {
@@ -129,11 +134,4 @@
     font-family:"Roboto";
     font-size:20px;
     text-decoration:underline;
-}
-@media(max-width:600px){
-    .todos-bg-container {
-        margin-top:auto;
-        margin-bottom:auto;
-    }
-
 }
