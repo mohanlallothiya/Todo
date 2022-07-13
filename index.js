@@ -19,8 +19,8 @@ let todosCount = todoList.length;
 
 saveTodoButton.onclick = function() {
     localStorage.setItem("todoList", JSON.stringify(todoList));
-    alert("saved");
-    saveMessage.textContent = "Saved";
+    alert("Data Saved");
+    saveMessage.textContent = "Data Saved";
 };
 
 function onAddTodo() {
@@ -32,12 +32,14 @@ function onAddTodo() {
         return;
     }
     let checkTodo = todoList.find((todo) => todo.text == userInputValue);
-
-    if (checkTodo.text === userInputValue) {
-        alert("Already Exist");
-        userInputElement.value = "";
-        return;
+    if(checkTodo !==undefined){
+        if (checkTodo.text === userInputValue) {
+            alert("Already Exist");
+            userInputElement.value = "";
+            return;
+        }
     }
+    
 
     todosCount = todosCount + 1;
 
