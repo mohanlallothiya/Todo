@@ -40,10 +40,13 @@
 
 .todo-items-container {
     margin: 0;
-    padding: 0;
+    padding: 5;
     overflow:auto;
     height:40vh;
     max-height:600px;
+    border:1px solid black;
+    border-radius:5px;
+    
 }
 
 .todo-item-container {
