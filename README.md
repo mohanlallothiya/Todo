@@ -1,5 +1,5 @@
 # Todo Application
-- with the use of HTML, CSS , & Javascript
+- using HTML, CSS & Javascript
 - task adding ,deletion functionality
 - task data is saved in local storage
 - data restored on refresh
