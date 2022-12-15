@@ -19,7 +19,6 @@ let todosCount = todoList.length;
 
 saveTodoButton.onclick = function() {
     localStorage.setItem("todoList", JSON.stringify(todoList));
-    alert("Data Saved");
     saveMessage.textContent = "Data Saved";
 };
 
@@ -39,8 +38,6 @@ function onAddTodo() {
             return;
         }
     }
-    
-
     todosCount = todosCount + 1;
 
     let newTodo = {
